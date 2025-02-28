@@ -98,5 +98,20 @@ public class Lista {
      
         return null; 
     }
+    public void ImprimirLista(){
+        Nodo aux = this.pFirst;
+        if (aux != null){
+            
+            while (aux != null){
+                System.out.println(aux.getClave());
+                aux = aux.getpNext();
+            
+             }
+            
+        }
+        else{
+            System.out.println("La lista esta vacia");
+        }
+    }
 }
     
