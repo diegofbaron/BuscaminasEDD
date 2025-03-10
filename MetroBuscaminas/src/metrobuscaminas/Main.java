@@ -9,12 +9,13 @@ package metrobuscaminas;
  * @author diego
  */
 public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
+        // Usar SwingUtilities.invokeLater para asegurar que la interfaz se ejecute en el hilo de eventos de Swing
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                new InterfazGrafica(); // Crear y mostrar la interfaz gráfica
+            }
+        });
+    } 
 }
